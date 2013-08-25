@@ -1,6 +1,28 @@
 [bootstrap-navbar-themes] (https://github.com/austb/bootstrap-navbar-themes)
 =======================
 
+## Issues
+
+If you encounter any issues with the themes provided such as a bootstrap element is not supported please create an [issue ticket] (https://github.com/austb/bootstrap-navbar-themes/issues).
+
+## Usage
+
+This code comes with 4 custom themes that override bootstrap's default navbar color themes.
+To create your own custom theme you must add all the css you need (examples of fully supported navbar themes can be found in bootstrap-navbar-themes.css).
+DISCLAIMER: ADDING ALL OF THE CSS SEEN FOR EACH OF MY THEMES MAY NOT BE NECESSARY FOR WHAT YOU ARE DOING.
+You also need to add your theme to the array found in index.html
+```html
+var themes = [
+        {"menuItemName": "Black", "themeClassName": "navbar-inverse"},
+        {"menuItemName": "Red", "themeClassName": "navbar-red"},
+        {"menuItemName": "Green", "themeClassName": "navbar-green"},
+        {"menuItemName": "Blue", "themeClassName": "navbar-blue"},
+        {"menuItemName": "Purple", "themeClassName": "navbar-purple"}
+    ],
+```
+"menuItemName" is what is displayed in the dropdown menu.  
+"themeClassName" is the name of the theme you created.
+
 ## Dependencies
 
 All dependencies required are included in the files.  
